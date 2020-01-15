@@ -1,0 +1,59 @@
+\documentclass[UTF8]{ctexart}
+\title{\textbf{每日一题（3）}}
+\date{2019.03.22}
+\usepackage{geometry}
+\usepackage{amsmath}
+\geometry{left=2.0cm,top=1.5cm,bottom=2.5cm,right=2.0cm}
+\begin{document}
+\maketitle
+设 $b_{ij} = (a_{i1} + a_{i2} + \cdots + a_{in}) - a_{ij}(i,j=1,2,\cdots,n),$ 求证：
+\[
+\left|\begin{array}{ccc}
+  b_{11} & \cdots & b_{1n} \\
+  \vdots &   & \vdots \\
+  b_{n1} & \cdots & b_{nn}
+\end{array}\right|
+=(-1)^{n-1}(n-1)
+\left|\begin{array}{ccc}
+        a_{11} & \cdots & a_{1n} \\
+        \vdots &   & \vdots \\
+        a_{n1} & \cdots & a_{nn}
+      \end{array}\right|
+\]
+
+证：
+\begin{equation}
+    \left( \begin{array}{ccc}
+        b_{11} & \cdots & b_{1n} \\
+        \vdots &   & \vdots \\
+        b_{n1} & \cdots & b_{nn}
+      \end{array} \right)
+=\left(
+\begin{array}{ccc}
+a_{11} & \cdots & a_{1n} \\
+\vdots &   & \vdots \\
+a_{n1} & \cdots & a_{nn}
+\end{array}
+\right)
+\left(
+\begin{array}{cccc}
+  0 & 1 & \cdots & 1 \\
+  1 & \ddots &   & \vdots \\
+  \vdots &   & \ddots & 1 \\
+  1 & \cdots & 1 & 0
+\end{array}
+\right),
+\end{equation}
+
+\begin{equation*}
+  \left| \begin{array}{cccc}
+  0 & 1 & \cdots & 1 \\
+  1 & \ddots &   & \vdots \\
+  \vdots &   & \ddots & 1 \\
+  1 & \cdots & 1 & 0
+  \end{array} \right|
+  =(-1)^{n-1}(n-1)
+\end{equation*}
+对 $(1)$ 左右两边同取行列式即得要证明的等式.
+
+\end{document} 

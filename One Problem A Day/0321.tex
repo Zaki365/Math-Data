@@ -1,0 +1,41 @@
+\documentclass[UTF8]{ctexart}
+\title{\textbf{每日一题（2）}}
+\date{2019.03.21}
+\usepackage{geometry}
+\usepackage{amsmath}
+\geometry{left=2.0cm,top=1.5cm,bottom=2.5cm,right=2.0cm}
+\begin{document}
+\maketitle
+计算积分: \[ (1) I = \int_{0}^{1} \frac{\ln(1+x)}{1+x^2}{\rm d} x .\]
+\[ (2) I_n = \int_{0}^{\frac{\pi}{2}} \sin^n x {\rm d}x. \]
+
+解：$(1)$ 令 $x=\tan t,$ 则${\rm d}x=\sec^2t{\rm d}t,$ 于是
+\[
+I=\int_{0}^{1}\frac{\ln(1+x)}{1+x^2}{\rm d} x = \int_{0}^{\frac{\pi}{4}}\ln(1+\tan t ){\rm d}t
+\]
+而 \[
+\ln[1+\tan(\frac{\pi}{4}-t)]=\ln(1+\frac{1-\tan t}{1+\tan t})=\ln2 - \ln(1+\tan t),
+\]
+故 $\ln(1+\tan t)-$ $\displaystyle \frac{1}{2}\ln 2$ 是关于区间 $[0,$ $\displaystyle \frac{\pi}{4}]$ 的中点的奇函数，在该区间上的积分为 $0,$ 因此
+\[
+I=\int_{0}^{\frac{\pi}{4}}[\ln(1+\tan t)-\frac{1}{2}\ln 2]{\rm d}t+\int_{0}^{\frac{\pi}{4}}\frac{1}{2}\ln 2{\rm d}t=\frac{\pi}{8}\ln 2.
+\]
+$(2)$ 利用分部积分法，
+\begin{align*}
+  I_n &=\int_{0}^{\frac{\pi}{2}}\sin^{n-1}x{\rm d}(-\cos x) \\
+    &=-\sin^{n-1}x\cos x |_{0}^{\frac{\pi}{2}}+\int_{0}^{\frac{\pi}{2}}\cos x{\rm d}(\sin^{n-1}x) \\
+    &=(n-1)\int_{0}^{\frac{\pi}{2}}\sin^{n-2}x\cos^2 x{\rm d}x \\
+    &=(n-1)I_{n-2}-(n-1)I_{n-1}
+\end{align*}
+得到递推公式：
+\[
+I_n=\frac{n-1}{n}I_{n-2}(n \geq 2)
+\]
+又 $I_0=$ $\displaystyle \frac{\pi}{2},I_1=1,$ 于是
+\[I_n=
+\begin{cases}
+  \displaystyle \frac{(n-1)!!}{n!!}, & \mbox{$n$ 为奇数},  \\
+  \displaystyle \frac{\pi}{2} \cdot \frac{(n-1)!!}{n!!}, & \mbox{$n$ 为偶数}.
+\end{cases}
+\]
+\end{document}

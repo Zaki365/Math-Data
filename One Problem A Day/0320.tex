@@ -1,0 +1,26 @@
+\documentclass[UTF8]{ctexart}
+\title{\textbf{每日一题（1）}}
+\date{2019.03.20}
+\usepackage{geometry}
+\usepackage{amsmath}
+\geometry{left=2.0cm,top=1.5cm,bottom=2.5cm,right=2.0cm}
+
+\begin{document}
+\maketitle
+
+设 $f(x)$ 在 $[a,b]$ 上两次连续可微且 $f(\displaystyle \frac{a+b}{2})=0$, 求证: \[ | \int_{a}^{b}f(x){\rm d}x | \leq \frac{1}{24} M (b-a)^3 ,\] 其中 $M=\sup \limits_{x \in [a,b]} |f''(x)|$ .
+
+证：在 $x=$ $\displaystyle \frac{a+b}{2}$ 处对 $f(x)$ 用带有Lagrange余项的Talor展开：
+\begin{align*}
+  f(x)&=f(\frac{a+b}{2})+f'(\frac{a+b}{2})(x-\frac{a+b}{2})+\frac{f''(\xi)}{2}(x-\frac{a+b}{2})^2 \\
+      &=f'(\frac{a+b}{2})(x-\frac{a+b}{2})+\frac{f''(\xi)}{2}(x-\frac{a+b}{2})^2 \\
+      &\leq f'(\frac{a+b}{2})(x-\frac{a+b}{2})+\frac{M}{2}(x-\frac{a+b}{2})^2
+\end{align*}
+两边同时对 $x$ 积分，有:
+\begin{align*}
+  \int_{a}^{b}f(x){\rm d}x&\leq f'(\frac{a+b}{2})\int_{a}^{b}(x-\frac{a+b}{2}){\rm d}x + \frac{M}{2}\int_{a}^{b}(x-\frac{a+b}{2})^2 {\rm d}x  \\
+   &=\frac{1}{24} M (b-a)^3.
+\end{align*}
+
+
+\end{document} 

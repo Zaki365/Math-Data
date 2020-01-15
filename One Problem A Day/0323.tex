@@ -1,0 +1,42 @@
+\documentclass[UTF8]{ctexart}
+\title{\textbf{每日一题（4）}}
+\date{2019.03.23}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\geometry{left=2.0cm,top=1.5cm,bottom=2.5cm,right=2.0cm}
+\begin{document}
+\maketitle
+设有 $n$ 阶Frobenius阵
+\begin{equation*}
+F=
+  \left( \begin{array}{cccc}
+    0 &        &   & -a_n \\
+    1 & \ddots &   & \vdots \\
+      & \ddots & 0 & -a_2 \\
+      &        & 1 & -a_1
+  \end{array}\right)
+\end{equation*}
+求证： $F^n+a_1F^{n-1}+ \cdots + a_nI_n = 0.$
+(提示：研究 $F^ie_1, F^ie_2,\cdots,(i=1,2,\cdots,n)$ 其中 $e_j$ 为 $\mathbb{R}^n$ 的第 $j$ 个标准基.)
+
+证: (法一)通过计算，容易得到 $Fe_1=e_2,$ $F^2e_1=F(Fe_1)=Fe_2=e_3,$
+于是我们可以归纳出以下结论:
+\[
+F^je_1=e_{j+1}(j=1,2,\cdots,n-1),
+\]
+
+若记 $\alpha=(a_n,a_{n-1},\cdots,a_1)^T,$ 则 $F^ne_1=-\alpha.$ 于是,记 $a_0=0,$ 有：
+\[
+\left(\sum_{i=0}^{n}a_iF^{n-i}\right)e_1=-\alpha+a_1e_n+a_2e_{n-1}+\cdots+a_ne_1=0.
+\]
+
+同理可证 $\displaystyle\left(\sum_{i=0}^{n}a_iF^{n-i}\right)e_j=0$ 对 $j\geq2$ 都成立.
+
+另一方面, 对任意的 $n$ 阶矩阵 $A,$ $A$ 右乘 $e_j$ 得到的向量是 $A$ 的第 $j$ 列元素构成的向量, 于是方阵 $F^n+a_1F^{n-1}+ \cdots + a_nI_n$ 的每一列元素都全为零, 故 $F^n+a_1F^ {n-1}+ \cdots + a_nI_n = 0,$ 结论得证.
+
+(法二：C-H定理)设方阵 $F$ 的特征多项式为 $f(t),$ 由C-H定理可知 $f(F)=0$.
+
+而 $f(t)=\det(tI_n-F)=t^n+a_1t^{n-1}+\cdots+a_n$ (过程略, 递推即可求得), 结合C-H定理即得要证的结论.
+
+\end{document} 

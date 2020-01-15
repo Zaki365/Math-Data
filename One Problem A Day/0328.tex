@@ -1,0 +1,48 @@
+\documentclass[UTF8]{ctexart}
+\title{\textbf{每日一题（8）}}
+\date{2019.03.28}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\geometry{left=2.0cm,top=1.5cm,bottom=2.5cm,right=2.0cm}
+\begin{document}
+\maketitle
+已知方阵 $\textbf{\textit{A}}=(a_{ij})_{n\times n}, r(\textbf{\textit{A}})=1,\lambda=a_{11}+\cdots+a_{nn}.$ 求证: $\textbf{\textit{A}}^2=\lambda\textbf{\textit{A}}.$
+
+证: 因为 $r(\textbf{\textit{A}})=1,$ 所以存在可逆阵 $\textbf{\textit{P}},\textbf{\textit{Q}},$ 使得
+\[
+\textbf{\textit{A}}=\textbf{\textit{P}}\left(
+\begin{array}{cc}
+1 & 0 \\
+0 &\textbf{\textit{O}}
+\end{array}\right)\textbf{\textit{Q}}=\textbf{\textit{P}}\left(\begin{array}{c}
+1 \\
+0 \\
+\vdots \\
+0
+\end{array}\right)(1,0,\cdots,0)\textbf{\textit{Q}}=\alpha \beta,
+\]
+其中:
+\[
+\alpha=\textbf{\textit{P}}\left(\begin{array}{c}
+1 \\
+0 \\
+\vdots
+\\0
+\end{array}\right)=
+\left(\begin{array}{c}
+a_1 \\ \vdots \\a_n
+\end{array}\right),
+\beta=(1,0,\cdots,0) \textbf{\textit{Q}}=(b_1,\cdots,b_n).
+\]
+于是
+\[
+\textbf{\textit{A}}=\alpha \beta =\left( \begin{array}{ccc}
+                                    a_1 b_1 & \cdots & a_1 b_n \\
+                                    \vdots &   & \vdots \\
+                                    a_n b_1 & \cdots & a_n b_n
+                                  \end{array} \right),
+\lambda = a_1 b_1+ \cdots + a_n b_n=\beta \alpha .
+\]
+所以 $\textbf{\textit{A}}^2=(\alpha \beta)(\alpha \beta)=\alpha(\beta \alpha)\beta=\lambda \alpha \beta =\lambda \textbf{\textit{A}}.$
+\end{document} 

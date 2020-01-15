@@ -1,0 +1,21 @@
+\documentclass[UTF8]{ctexart}
+\title{\textbf{每日一题（9）}}
+\date{2019.03.30}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\geometry{left=2.0cm,top=1.5cm,bottom=2.5cm,right=2.0cm}
+\begin{document}
+\maketitle
+条件同上一题: 已知方阵 $\textbf{\textit{A}}=(a_{ij})_{n\times n}, r(\textbf{\textit{A}})=1,\lambda=a_{11}+\cdots+a_{nn},$ 求: (可以用上一题已经证明的结论)
+
+(1) ${\rm det}(\textbf{\textit{I}}+\textbf{\textit{A}});$
+
+(2) 若 $\textbf{\textit{I}}+\textbf{\textit{A}}$ 可逆, 求它的逆矩阵(用 $\textbf{\textit{I}},\textbf{\textit{A}},\lambda$ 表示).
+
+解: (1) ${\rm det}(\textbf{\textit{I}}+\textbf{\textit{A}})={\rm det}(\textbf{\textit{I}}+\alpha \beta)={\rm det}(1+\beta \alpha)=1+\lambda.$ (利用结论: 设 $\textbf{\textit{A}}$ 是 $n \times m$ 矩阵, $\textbf{\textit{B}}$ 是 $m \times n$ 矩阵, 则 ${\rm det}(\lambda \textbf{\textit{I}}_n+\textbf{\textit{AB}})=\lambda ^{n-m}{\rm det}(\lambda \textbf{\textit{I}}_m+\textbf{\textit{BA}})$.)
+
+(2) 设 $\textbf{\textit{B}}=\textbf{\textit{I}}+\textbf{\textit{A}},$ 则 $\textbf{\textit{A}}=\textbf{\textit{B}}-\textbf{\textit{I}},$ 代入 $\textbf{\textit{A}}^2 = \lambda \textbf{\textit{A}}$ 并整理得 $\textbf{\textit{B}}(\textbf{\textit{B}}-(2+\lambda)\textbf{\textit{I}})=-(1+\lambda)\textbf{\textit{I}}.$
+
+因为$\textbf{\textit{I}}+\textbf{\textit{A}}$ 可逆, 所以  ${\rm det}(\textbf{\textit{I}}+\textbf{\textit{A}})=1+\lambda \neq 0,$ 故  $\textbf{\textit{B}}^{-1}=\left(-\displaystyle \frac{1}{1+\lambda}\right)(\textbf{\textit{B}}-(2+\lambda)\textbf{\textit{I}}),$ 于是, 把 $\textbf{\textit{B}}=\textbf{\textit{I}}+\textbf{\textit{A}}$ 代入并化简即得 $(\textbf{\textit{I}}+\textbf{\textit{A}})^{-1}=\textbf{\textit{I}}-\displaystyle \frac{1}{1+\lambda}\textbf{\textit{A}}.$
+\end{document} 

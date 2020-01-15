@@ -1,0 +1,32 @@
+\documentclass[UTF8]{ctexart}
+\title{\textbf{每日一题（5）}}
+\date{2019.03.24}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\geometry{left=2.0cm,top=1.5cm,bottom=2.5cm,right=2.0cm}
+\begin{document}
+\maketitle
+1. 在区间 $(0,\pi)$ 上定义函数 $D_n(x)=$ $\displaystyle \frac{\sin \displaystyle \frac{(2n+1)x}{2}}{2\sin \displaystyle \frac{x}{2}},$ $n \in \mathbb{N}_+,$ 计算积分 $\displaystyle \int_{0}^{\pi}D_n(x){\rm d}x.$ (提示: 有恒等式 $\displaystyle \sum_{k=1}^{n}\cos kx=$ $\displaystyle \frac{\sin \displaystyle \frac{(2n+1)x}{2}}{2\sin \displaystyle \frac{x}{2}}-\frac{1}{2}$)
+
+2. 证明：对任意的实数 $a$ 成立恒等式：
+\[
+\int_{0}^{\frac{\pi}{2}}\frac{{\rm d}x}{1+\tan^ax} \equiv \int_{0}^{\frac{\pi}{2}}\frac{{\rm d}x}{1+\cot^ax} \equiv \frac{\pi}{4}
+\]
+
+1. 解: 函数 $D_n(x)$ 在 $x=0$ 处无定义, 但是容易证明在 $x=0$ 处 $D_n(x)$ 的极限为 $\displaystyle \frac{2n+1}{2},$ 故在 $[0,\pi]$ 上 $D_n(x)$ 可积, 于是:
+\begin{align*}
+  \int_{0}^{\pi}D_n(x){\rm d}x&=\int_{0}^{\pi}\left(\frac{1}{2}+\sum_{k=1}^{n}\cos kx\right){\rm d}x \\
+                              &=\frac{\pi}{2}+\sum_{k=1}^{n}\int_{0}^{\pi}\cos kx{\rm d}x=\frac{\pi}{2}.
+\end{align*}
+
+2. 证明: 作代换 $x=\displaystyle \frac{\pi}{2}-t,$ 于是
+\[
+\frac{1}{1+\tan^a\left(\displaystyle \frac{\pi}{2}-t\right)}=\frac{1}{1+\cot^a t}=\frac{\tan^at}{1+\tan^at}=1-\frac{1}{1+\tan^at}.
+\]
+可见函数 $\displaystyle \frac{1}{1+\tan^ax}-\displaystyle \frac{1}{2}$ 关于区间中点 $\displaystyle \frac{\pi}{4}$ 是奇函数, 故
+\[
+\int_{0}^{\frac{\pi}{2}}\frac{{\rm d}x}{1+\tan^ax}=\int_{0}^{\frac{\pi}{2}}\left(\frac{1}{1+\tan^ax}-\displaystyle\frac{1}{2}\right){\rm d}x+\int_{0}^{\frac{\pi}{2}}\displaystyle\frac{1}{2}{\rm d}x=\displaystyle\frac{\pi}{4}.
+\]
+
+\end{document} 
