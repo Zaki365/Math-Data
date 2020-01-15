@@ -1,0 +1,232 @@
+\documentclass[UTF8]{ctexart}
+
+\title{\textbf{$2019-2020$ 秋冬学期《概率论》小测题目整理}}
+\author{Yuanzhi Zhang}
+\date{}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{enumerate}
+
+\linespread{1.75}
+\pagestyle{plain}
+\geometry{left=2.0cm,top=2.5cm,bottom=2.5cm,right=2.0cm}
+\allowdisplaybreaks[3]
+
+\begin{document}
+\maketitle
+\section*{Chapter 1}
+1. 设平面上有无限多条无限长的平行线, 它们之间的间距为 $l$.
+
+(1) 向此平面随机投掷直径为 $d$ 的圆饼, 求该圆饼与任一条直线相交的概率;
+
+(2) 向此平面随机投掷直径为 $d$ 的半圆饼, 求该半圆饼与任一条直线相交的概率.
+
+2. 设 $A_1,A_2,\cdots,A_n,\cdots$ 是一列相互独立的随机事件, 求证:
+\[
+P\left(\bigcup_{n=1}^{\infty}A_n\right)=1\Leftrightarrow\sum_{n=1}^{\infty}P(A_n)=+\infty.
+\]
+
+3. 设 $E,F$ 是任意两个事件, $P(F)>0$, 求证: $P\left(E\left|E\cup F\right)\right.\geq P\left(E\left|F\right)\right.$.
+
+\section*{Chapter 2}
+1. 设某个系统由第 1 、第 2 两种元件构成, 元件之间独立工作, 第 $i(i=1,2)$ 种元件有 $n_i$ 个, 每个元件的寿命服从参数 $\lambda_i>0$ 的指数分布, 当这 $n_1+n_2$ 个元件中有一个失效时系统就失效. 记 $T$ 为系统工作的时间.
+
+(1) 求 $T$ 的分布;
+
+(2) 求第 1 种元件导致系统失效的概率.
+
+2. 设 $\xi_1,\xi_2,\xi_3$ 为相互独立的标准正态随机变量, 令 $\eta=\displaystyle\frac{\xi_1+\xi_2\xi_3}{\sqrt{1+\xi_2^2}}$.
+
+(1) 求在给定 $\xi_2=x$ 的条件下, $\eta$ 的条件密度函数;
+
+(2) 求 $\eta$ 的密度函数.
+
+3. 设随机变量 $\xi,\eta$ 相互独立, $\xi\sim\beta(a,b), \eta\sim\Gamma(\lambda,a+b)$, 求 $\xi\eta$ 的分布.
+
+\section*{Chapter 3}
+1. 设随机变量 $X$ 服从参数为 $M,N,n$ 的超几何分布, 即
+\[
+P(X=k)=\frac{\binom{M}{k}\binom{N-M}{n-k}}{\binom{N}{n}}, k=0,1,\cdots,n.
+\]其中 $n\leq M\leq N$. 求 $EX, VarX$.
+
+2. 设 $X_1,X_2,\cdots,X_n,\cdots$ 是一列独立同分布的标准正态随机变量, 随机变量 $N$ 服从 Poisson 分布 $P(\lambda)$ 且与 $X_1,X_2,\cdots,X_n,\cdots$ 相互独立. 求证: 当 $\lambda\rightarrow+\infty$ 时, $\displaystyle\xi_{\lambda}:=\frac{\sum\limits_{k=1}^{N}X_k}{\sqrt{\lambda}}\xrightarrow{\;\;\; d \;\;\; }N(0,1)$.
+
+3. 设随机变量 $X_1,X_2,\cdots,X_n$ 相互独立, $X_i\sim N(\beta+\gamma z_i,\sigma^2)(i=1,2,\cdots,n)$, 其中 $\beta,\gamma,z_i\in\mathbb{R},\sigma>0$, 且 $\displaystyle\sum\limits_{i=1}^{n}z_i=0, \sum\limits_{i=1}^{n}z_i^2=1$. 记 $\displaystyle Y=\frac{1}{n}\sum\limits_{i=1}^{n}X_i, Z=\sum\limits_{i=1}^{n}z_iX_i$.
+
+(1) 求 $Y$ 和 $Z$ 的分布;
+
+(2) 求 $Y^2$ 和 $Z^2$ 的相关系数.
+
+4. 设随机变量 $X$ 的取值为 $1,2,\cdots,n$, 求证: $Var X \leq \displaystyle\frac{(n-1)^2}{4}$.
+
+\section*{Answers}
+\subsection*{Chapter 1}
+1. (1) $\displaystyle\frac{l}{d}$ (It's trival).
+
+(2) 将半圆饼补成整个圆饼, 并分别记两块半圆饼为 $S_1,S_2$, 记事件 ``$S_i$ 与平行线相交" 为 $A_i$, $i=1,2$.
+
+于是 $P(A_1)=P(A_2)$, 并且由 (1) 可知 $P(A_1\cup A_2)=\displaystyle\frac{l}{d}$.
+
+那么, 由 ``多还少补" 公式, $P(A_1\cup A_2)=P(A_1)+P(A_2)-P(A_1A_2)=2P(A_1)-P(A_1A_2)$.
+
+其中 $P(A_1A_2)$ 即为圆饼直径与平行线相交的概率 (Poisson 投针问题), $P(A_1A_2)=\displaystyle\frac{2l}{\pi d}$.
+
+所以 $P(A_1)=\displaystyle\frac{1}{2}\left[P(A_1\cup A_2)+P(A_1A_2)\right]=\frac{(2+\pi)l}{2\pi d}$.
+
+2. $(\Leftarrow)$ \[
+\begin{aligned}
+P\left(\, \overline{\bigcup_{n=1}^{\infty}A_n} \,\right)&=P\left(\bigcap_{n=1}^{\infty}\overline{A_n}\right)\\
+ &=\prod_{n=1}^{\infty}P\left(\,\overline{A_n}\,\right) \\
+ &=\prod_{n=1}^{\infty}\left(1-P(A_n)\right)\\
+ &\leq\prod_{n=1}^{\infty}e^{-P(A_n)}=e^{-\sum\limits_{n=1}^{\infty}P(A_n)}=0
+\end{aligned}
+\]
+
+所以 $\displaystyle P\left(\, \overline{\bigcup_{n=1}^{\infty}A_n} \,\right)=0, \Rightarrow P\left(\bigcup_{n=1}^{\infty}A_n\right)=1$.
+
+$(\Rightarrow)$ 采用反证法, 假设 $\displaystyle\sum\limits_{n=1}^{\infty}P(A_n)<+\infty$, 那么 $P(A_n)\rightarrow0(n\rightarrow\infty)$.
+
+当 $n$ 充分大时, 有 $\displaystyle1-P(A_n)\geq e^{-2P(A_n)}$, 设 $\exists N$, 使得 $n>N$ 时上式恒成立.
+
+$\displaystyle\forall k\geq N, \prod_{n=k}^{\infty}(1-P(A_n))\geq e^{-2\sum\limits_{n=k}^{\infty}P(A_n)}$
+
+而 $\displaystyle\prod_{n=1}^{\infty}\left(1-P(A_n)\right)=1-P\left(\bigcup_{n=1}^{\infty}A_n\right)=0$, 所以 $\displaystyle\prod_{n=k}^{\infty}\left(1-P(A_n)\right)=0\Rightarrow e^{-2\sum\limits_{n=k}^{\infty}P(A_n)}=0$, 这与 $\displaystyle\sum\limits_{n=1}^{\infty}P(A_n)<+\infty$ 矛盾.
+
+3. 原式不等式等价于 $\displaystyle\frac{P(E)}{P(E\cup F)}\geq\frac{P(EF)}{P(F)}\Leftrightarrow\frac{P(E)}{P(E)+P(F)-P(EF)}\geq\frac{P(EF)}{P(F)}$.
+
+利用性质: 若 $a,b,c,d>0, b>a, d>c$, 则 $\displaystyle \frac{a}{b}\geq\frac{c}{d}\Leftrightarrow\frac{a}{b-a}\geq\frac{c}{d-c}$,
+
+要证的不等式等价于 $\displaystyle \frac{P(E)}{P(F)-P(EF)}\geq\frac{P(EF)}{P(F)-P(EF)}$, 即 $P(E)\geq P(EF)$, 这是平凡的.
+
+\subsection*{Chapter 2}
+1. (1) 设这 $(n_1+n_2)$ 个元件的使用时间分别为 $X_1,X_2,\cdots,X_{n_1},Y_1,Y_2,\cdots,Y_{n_2}$, 它们都是随机变量, 则 $T=\min\left\{X_1,X_2,\cdots,X_{n_1},Y_1,Y_2,\cdots,Y_{n_2}\right\}$.
+
+$\displaystyle P(T>t)=\prod_{i=1}^{n_1}P(X_i>t)\prod_{j=1}^{n_2}P(Y_j>t)=e^{-(\lambda_1n_1+\lambda_2n_2)t}$, 所以 $T$ 服从参数为 $\lambda_1n_1+\lambda_2n_2$ 的指数分布.
+
+(2) 记 $X=\min\left\{X_1,X_2,\cdots,X_{n_1}\right\}, Y=\min\left\{Y_1,Y_2,\cdots,Y_{n_2}\right\}$, 它们分别有密度函数 $p_1(x),p_2(y)$.
+
+同 (1) 可知 $\displaystyle p_1(x)=\lambda_1n_1e^{-\lambda_1n_1x}, p_2(y)=\lambda_2n_2e^{-\lambda_2n_2y}$.
+
+要求的概率即为 $\displaystyle P=\iint\limits_{x\leq y}p_1(x)p_2(y)\text{d}x\text{d}y=\frac{\lambda_1n_1}{\lambda_1n_1+\lambda_2n_2}$.
+
+2. (1) 因为 $\xi_1,\xi_3\sim N(0,1)$, 所以 $\displaystyle\eta=\frac{\xi_1+x\xi_3}{\sqrt{1+x^2}}\sim N\left(0,\left(\frac{1}{\sqrt{1+x^2}}\right)^2+\left(\frac{x}{\sqrt{1+x^2}}\right)^2\right)=N(0,1)$, $\eta$ 服从标准正态分布.
+
+(2) 因为 $\eta$ 与 $\xi_2$ 相互独立, 所以 $\eta$ 的分布与 $\xi_2=x$ 时 $\eta$ 的条件分布相同, 于是 $\eta\sim N(0,1)$.
+
+3. \textbf{(Method 1)} 令 $U=\eta\xi, V=\eta(1-\xi)$.
+
+方程组 $\begin{cases} u=yx \\ v=y(1-x) \end{cases}$ 可被唯一地解为 $ \begin{cases} \displaystyle x=\frac{u}{u+v} \\ y=u+v \end{cases}$, $\displaystyle|J|=\left|\frac{\partial(x,y)}{\partial(u,v)}\right|=\frac{1}{u+v}$.
+
+于是
+\[
+\begin{aligned}
+p_{UV}(u,v)&=p_{\eta}(u+v)p_{\xi}\left(\frac{u}{u+v}\right)\cdot\frac{1}{u+v}\\
+ &=\frac{\lambda^{a+b}}{\Gamma(a)\Gamma(b)}u^{a-1}v^{b-1}e^{-\lambda(u+v)}\\
+ &=\frac{\lambda^{a}}{\Gamma(a)}u^{a-1}e^{-\lambda u}\cdot\frac{\lambda^{b}}{\Gamma(b)}v^{b-1}e^{-\lambda b}
+\end{aligned}
+\]
+
+所以 $\xi\eta=U\sim\Gamma(\lambda,a), V\sim\Gamma(\lambda,b)$.
+
+\textbf{(Method 2)} 令 $U=\eta\xi, V=\eta$.
+
+方程组 $\begin{cases} u=yx \\ v=x \end{cases}$ 可被唯一地解为 $ \begin{cases} x=v \\ \displaystyle y=\frac{u}{v} \end{cases}$, $\displaystyle|J|=\left|\frac{\partial(x,y)}{\partial(u,v)}\right|=\frac{1}{v}$.
+
+因为 $x>0,0<y<1$, 所以 $v>0, 0<u<v$.
+
+于是
+\[
+\begin{aligned}
+p_{UV}(u,v)&=p_{\eta}(v)p_{\xi}\left(\frac{u}{v}\right)\cdot\frac{1}{v}\\
+ &=\frac{\lambda^{a+b}}{\Gamma(a)\Gamma(b)}e^{-\lambda v}(v-u)^{b-1}u^{a-1}, \\
+p_{U}(u)&=\int_{u}^{+\infty}p_{UV}(u,v)\text{d}v\\
+&=\frac{\lambda^{a+b}}{\Gamma(a)\Gamma(b)}u^{a-1}e^{-\lambda u}\int_{u}^{+\infty}(v-u)^{b-1}e^{-\lambda(v-u)}\text{d}v\\
+&=\frac{\lambda^a}{\Gamma(a)}u^{a-1}e^{-\lambda u}.
+\end{aligned}
+\]
+
+所以 $\xi\eta\sim \Gamma(\lambda,a)$.
+
+\textbf{(Method 3)} 前面两种解法差别不大, 本质上都是计算, 只是第一种方法中的构造更巧妙一些. 事实上, 利用课上的 PPT (ch2-6, Page 61) 中的一个引理, 我们有更简便的做法; 同时这个引理也能解释为什么第一种方法中会想到这样构造.
+
+\textbf{Lemma} 设随机变量 $\xi_1,\xi_2$ 相互独立, $\xi_1\sim \Gamma(\lambda,r_1), \Gamma(\lambda,r_2)$, 有 
+\[
+\xi_1+\xi_2\sim\Gamma(\lambda,r_1+r_2), \frac{\xi_1}{\xi_1+\xi_2}\sim\beta(r_1,r_2).
+\]
+
+引理之证不是很难, 令 $\eta_1=\xi_1+\xi_2, \eta_2=\displaystyle \frac{\xi_1}{\xi_1+\xi_2}\sim\beta(r_1,r_2)$, 计算即得.
+
+回到本题, 我们反过来用上面的引理. 因为 $\xi\sim\beta(a,b), \eta\sim\Gamma(\lambda,a+b)$, 所以存在相互独立的随机变量 $X_1,Y_1,X_2,Y_2$, 满足: $X_1\sim\Gamma(\lambda,a),Y_1\sim\Gamma(\lambda,b),\xi=\displaystyle\frac{X_1}{X_1+Y_1}; X_2\sim\Gamma(\lambda,a),Y_2\sim\Gamma(\lambda,b),\eta=X_2+Y_2$.
+
+取 $X_1=X_2,Y_1=Y_2$, 仍不矢独立性, 于是 $\xi\eta=X_1\sim\Gamma(\lambda,a)$, done!
+
+\subsection*{Chapter 3}
+1. 设口袋里有 $N$ 个球, 其中 $M$ 个红球 $(M\leq N)$, 不放回抽样 $n$次, 记随机变量 $\xi_i=\begin{cases}
+                                                               1, & \mbox{第} i \mbox{次摸到红球} \\
+                                                               0, & \mbox{其他}
+                                                             \end{cases}$, 则有 $\displaystyle X=\sum\limits_{i=1}^{n}\xi_i$.
+
+于是 $\displaystyle E\xi_i=\frac{M}{N}, EX=E\left(\sum\limits_{i=1}^{n}\xi_i\right)=\sum\limits_{i=1}^{n}E\xi_i=n\cdot\frac{M}{N}$.
+
+$\displaystyle Var\xi_i=E\xi_i^2-(E\xi_i)^2=\frac{M}{N}-\frac{M^2}{N^2}$,
+
+$\displaystyle Cov(\xi_i,\xi_j)=E\xi_i\xi_j-E\xi_iE\xi_j=P(\xi_1=\xi_j=1)-\frac{M^2}{N^2}$.
+
+不妨 $i<j$, 那么 $\displaystyle P(\xi_i=\xi_j=1)=P(\xi_j=1|\xi_i=1)P(\xi_i=1)=\frac{M-1}{N-1}\cdot\frac{M}{N}$,
+
+\[
+\begin{aligned}
+\displaystyle VarX=Var\left(\sum\limits_{i=1}^{n}\xi_i\right)&=\sum\limits_{i=1}^{n}Var\xi_i+\sum\limits_{i\neq j}Cov(\xi_i,\xi_j)\\
+&=n\cdot\frac{M}{N}\left(1-\frac{M}{N}\right)+n(n-1)\cdot\left(\frac{M(M-1)}{N(N-1)}-\frac{M^2}{N^2}\right)\\
+&=\frac{nM(N-n)(N-M)}{N^2(N-1)}\quad.
+\end{aligned}
+\]
+
+2. 设随机变量 $\displaystyle \xi_{\lambda}=\frac{\sum\limits_{k=1}^{N}X_k}{\sqrt{\lambda}}$ 的特征函数为 $g_{\lambda}(t)$,
+
+要证的结论即为: 当 $\lambda\rightarrow+\infty$ 时, $\displaystyle g_{\lambda}(t)\rightarrow e^{-\frac{t^2}{2}}$.
+\[
+\begin{aligned}
+g_{\lambda}(t)&=Ee^{\text{i}t\xi_{\lambda}}=Ee^{\text{i}t\frac{\sum\limits_{k=1}^{N}X_i}{\sqrt{\lambda}}}\\
+              &=\sum\limits_{n=0}^{\infty}E\left(e^{\text{i}t\frac{\sum\limits_{k=1}^{n}X_i}{\sqrt{\lambda}}}\Bigg|N=n\right)P(N=n)\text{(全期望公式)}\\
+              &=\sum\limits_{n=0}^{\infty}\left(e^{-\frac{t^2}{2\lambda}}\right)^n\cdot\frac{\lambda^n}{n!}e^{-\lambda}\\
+              &=\sum\limits_{n=0}^{\infty}\frac{\left(\lambda e^{-\frac{t^2}{2\lambda}}\right)^n}{n!}e^{-\lambda}\\
+              &=e^{\lambda\left(e^{-\frac{t^2}{2\lambda}}-1\right)}.
+\end{aligned}
+\]
+
+$\displaystyle\lim\limits_{\lambda\rightarrow\infty}g_\lambda(t)=e^{-\frac{t^2}{2}}$, 故 $\xi_\lambda\xrightarrow{\;\;\; d \;\;\; }N(0,1)$
+
+3. (1) $(X_1,X_2,\cdots,X_n)$ 服从多元正态分布, $Y,Z$ 为 $X_1,X_2,\cdots,X_n$ 的线性组合, 所以 $(Y,Z)$ 服从二元正态分布, $Y,Z$ 也分别服从正态分布, 故只需要考虑它们的期望与方差.
+
+$\displaystyle EY=\frac{1}{n}\sum\limits_{i=1}^{n}EX_i=\beta$,
+
+$\displaystyle VarY=\frac{1}{n}\sum\limits_{i=1}^{n}VarX_i=\frac{1}{n}\sigma^2$,
+
+$\displaystyle \Rightarrow Y\sim N\left(\beta,\frac{1}{n}\sigma^2\right)$.
+
+类似地, $EZ=\gamma, VarZ=\sigma^2\Rightarrow Z\sim N\left(\gamma,\sigma^2\right)$.
+
+(2) 因为 $X_1,X_2,\cdots,X_n$ 相互独立, 所以 $Cov(X_i,X_j)=0(i\neq j)$, 于是
+\[
+\begin{aligned}
+Cov(Y,Z)&=Cov\left(\frac{1}{n}\sum\limits_{i=1}^{n}X_i,\sum\limits_{j=1}^{n}z_jX_j\right)\\
+        &=\frac{1}{n}\sum\limits_{i=1}^{n}z_iCov(X_i,X_i)\\
+        &=\frac{1}{n}\sum\limits_{i=1}^{n}z_iVarX_i=0
+\end{aligned}
+\]
+
+故 $\displaystyle (Y,Z)\sim N\left(\beta,\gamma,\frac{1}{n}\sigma^2,\sigma^2,0\right)$, $Y,Z$ 相互独立, 那么 $Y^2,Z^2$ 也相互独立, 所以 $Cov\left(Y^2,Z^2\right)=0$.
+
+4. 利用不等式 $Var X\leq E(X-c)^2(\text{常数}c\in \mathbb{R}$, 等号当且仅当 $c=EX$ 时取到), 以及 $\displaystyle\left|X-\frac{n+1}{2}\right|\leq\frac{n-1}{2}$,
+
+得到 $\displaystyle VarX\leq E\left(X-\frac{n+1}{2}\right)^2\leq E\left(\frac{n-1}{2}\right)^2=\frac{(n-1)^2}{4}$, 得证.
+
+
+\end{document} 
