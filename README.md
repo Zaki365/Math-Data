@@ -1,2 +1,1 @@
-# Math-Dates
-zyz的数学资料们
+# Math-Datas From zyz
