@@ -24,7 +24,7 @@
 
 **2018-2019, Fall & Winter：**
 
-* Analytic Geometry, Weinmin Sheng.
+* Analytic Geometry, Weimin Sheng.
 
 * Mathematical Analysis I, Yongcheng Yin.
 
