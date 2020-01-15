@@ -1,0 +1,67 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\pagestyle{plain}
+\geometry{left=2.0cm,top=2.5cm,bottom=2.5cm,right=2.0cm}
+\begin{document}
+设 $P_{n,k}(x)=C_{n}^{k}x^k(1-x)^{n-k}(n\geq k,n,k\in\mathbb{N},x\in \mathbb{R})$, 求证:
+\\
+(1) $\displaystyle\sum\limits_{k=0}^{n}P_{n,k}(x)=1$;
+\\
+(2) $\displaystyle\sum\limits_{k=0}^{n}(k-nx)^2P_{n,k}(x)\leq\displaystyle\frac{1}{4}n$.
+~\\
+
+\textbf{证}: (1) 结论平凡, 略.
+
+(2) (法一: 求导)由 (1) 知 $(1-x)^n+\sum\limits_{k=1}^{n-1}C_{n}^{k}x^k(1-x)^{n-k}+x^n=1$.
+
+两边分别对 $x$ 求导并乘 $x(1-x)$, 得
+\[
+-nx(1-x)^n+\sum\limits_{k=1}^{n-1}(k-nx)C_{n}^{k}x^k(1-x)^{n-k}+nx^n(1-x)=0.
+\]
+上式两边再分别对 $x$ 求导并乘 $x(1-x)$ 得
+\[
+-nx(1-x)^{n+1}+nx^2(1-x)^n-nx(1-x)\sum\limits_{k=1}^{n-1}C_{n}^{k}x^k(1-x)^{n-k}
+\]
+\[
++\sum\limits_{k=1}^{n-1}(k-nx)^2C_{n}^{k}x^k(1-x)^{n-k}+n^2x^n(1-x)^2-nx^{n+1}(1-x)=0.
+\]
+把 $\displaystyle\sum\limits_{k=1}^{n-1}C_{n}^{k}x^k(1-x)^{n-k}=1-(1-x)^n-x^n$ 代入上式并整理即得
+\[
+\sum\limits_{k=0}^{n}(k-nx)^2P_{n,k}(x)-nx(1-x)=0.
+\]
+故 $\displaystyle\sum\limits_{k=0}^{n}(k-nx)^2P_{n,k}(x)=nx(1-x)\leq\displaystyle\frac{1}{4}n$.
+~\\
+
+(法二: 组合恒等式) 考虑分成三个部分求和, 第一部分:
+\[\begin{aligned}
+\sum\limits_{k=0}^{n}k^2P_{n,k}(x)&=\sum\limits_{k=1}^{n}knC_{n-1}^{k-1}x^k(1-x)^{n-k}(kC_{n}^{k}=nC_{n-1}^{k-1})\\
+                                  &=nx\sum\limits_{k=1}^{n}[(k-1)+1]C_{n-1}^{k-1}x^{k-1}(1-x)^{n-k}\\
+                                  &=n(n-1)x^2\sum\limits_{k=2}^{n}C_{n-2}^{k-2}x^{k-1}(1-x)^{n-k}+nx\sum\limits_{k=1}^{n}C_{n-1}^{k-1}x^{k-1}(1-x)^{n-k}\\
+                                  &=n(n-1)x^2+nx.
+\end{aligned}
+\]
+第二部分:
+\[
+\begin{aligned}
+\sum\limits_{k=0}^{n}(-2knx)P_{n,k}(x)&=(-2nx)\sum\limits_{k=1}^{n}nC_{n-1}^{k-1}x^k(1-x)^{n-k}(kC_{n}^{k}=nC_{n-1}^{k-1})\\
+                                      &=-2n^2x^2.
+\end{aligned}
+\]
+第三部分:
+\[
+\begin{aligned}
+\sum\limits_{k=0}^{n}n^2x^2P_{n,k}(x)=n^2x^2.
+\end{aligned}
+\]
+于是原式
+\[
+\begin{aligned}
+\sum\limits_{k=0}^{n}(k-nx)^2P_{n,k}(x)&=\sum\limits_{k=0}^{n}k^2P_{n,k}(x)+\sum\limits_{k=0}^{n}(-2knx)P_{n,k}(x)+\sum\limits_{k=0}^{n}n^2x^2P_{n,k}(x)\\
+                                       &=n(n-1)x^2+nx-2n^2x^2+n^2x^2\\
+                                       &=nx(1-x)\\
+                                       &\leq\frac{1}{4}n.
+\end{aligned}
+\]
+\end{document} 
