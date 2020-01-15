@@ -1,0 +1,114 @@
+\documentclass[UTF8]{ctexart}
+\title{数分课本习题整理 —— 广义积分}
+\author{Yuanzhi Zhang}
+\date{2019.05.07}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{enumerate}
+
+\linespread{1.75}
+\pagestyle{plain}
+\geometry{left=2.0cm,top=2.5cm,bottom=2.5cm,right=2.0cm}
+\allowdisplaybreaks[4]
+
+\begin{document}
+\maketitle
+\textbf{P291, T14}. 设函数 $f(x)$ 在 $(-\infty,+\infty)$ 上非负, 在任意有限区间上可积且满足条件 :
+\[
+\int_{-\infty}^{+\infty}f(x){\rm d}x = \int_{-\infty}^{+\infty}x^2f(x){\rm d}x = 1, \int_{-\infty}^{+\infty}xf(x){\rm d}x = 0,
+\]
+求证对任意的 $a\leq0$, 都有
+\[
+\int_{-\infty}^{a}f(x){\rm d}x\leq\frac{1}{1+a^2}.
+\]
+~\\
+
+\textbf{证}: 采用反证法, 假设存在 $a_0\leq0$, 使得 $\displaystyle\int_{-\infty}^{a_0}f(x){\rm d}x\geq\frac{1}{1+a_0^2}$.
+
+那么, 由 $\displaystyle\int_{-\infty}^{a_0}(-x)f(x){\rm d}x>\int_{-\infty}^{a_0}(-a_0)f(x){\rm d}x$ 得 $\displaystyle\int_{-\infty}^{a_0}xf(x){\rm d}x<a_0\int_{-\infty}^{a_0}f(x){\rm d}x\leq\frac{a_0}{1+a_0^2}$,
+
+且 $\displaystyle\int_{-\infty}^{a_0}x^2f(x){\rm d}x>a_0^2\int_{-\infty}^{a_0}f(x){\rm d}x\geq\frac{a_0^2}{1+a_0^2}$,
+
+于是 $\displaystyle\int_{a_0}^{+\infty}f(x){\rm d}x<\frac{a_0^2}{1+a_0^2}, \int_{a_0}^{+\infty}xf(x){\rm d}x>\frac{-a_0}{1+a_0^2}, \int_{a_0}^{+\infty}x^2f(x){\rm d}x<\frac{1}{1+a_0^2}$.
+
+由 Cauchy-Schwarz 不等式,
+\[
+\displaystyle\left(\int_{a_0}^{+\infty}xf(x){\rm d}x\right)^2\leq\int_{a_0}^{+\infty}\left(x\sqrt{f(x)}\right)^2{\rm d}x\cdot\int_{a_0}^{+\infty}\left(\sqrt{f(x)}\right)^2{\rm d}x=\int_{a_0}^{+\infty}x^2f(x){\rm d}x\cdot\int_{a_0}^{+\infty}f(x){\rm d}x.
+\]
+而上式右端 $<\displaystyle\frac{a_0^2}{1+a_0^2}$, 左端 $>\displaystyle\frac{a_0^2}{1+a_0^2}$, 矛盾. 故原不等式得证.
+~\\
+~\\
+
+\textbf{P293, T23}. 设 $f(x)\in C^2([0,1])$, 且 $f(0)=f(1)=0$, 当 $0<x<1$ 时, $f(x)\neq0$, 求证:
+\[
+\int_{0}^{1}\left|\frac{f''(x)}{f(x)}\right|{\rm d}x\geq4.
+\]
+(注: 事实上, 要证明的结论比较弱, 是由不等式 $4\max\limits_{x\in[0,1]} f(x)\leq\displaystyle\int_{0}^{1}|f''(x)|{\rm d}x$ ``化装" 得到的.)
+~\\
+
+\textbf{证}: 结合 ``注", 我们只需要证明 $4\max\limits_{x\in[0,1]} f(x)\leq\displaystyle\int_{0}^{1}|f''(x)|{\rm d}x$ .
+
+因为当 $0<x<1$ 时 $f(x)\neq0$, 所以不妨设 $f(x)>0$. 由 $f(x)$ 的连续性, 存在 $x_0\in(0,1)$, 使得 $f(x_0)=\max\limits_{x\in[0,1]} f(x)$, 于是 $f'(x_0)=0$.
+
+由 Lagrange 中值定理, 存在 $\xi\in(0,x_0),\eta\in(x_0,1)$, 使得
+\[
+  f(x_0)-f(0)=x_0f'(\xi)=x_0\int_{x_0}^{\xi}f''(x){\rm d}x;
+\]
+\[
+f(x_0)-f(1)=(x_0-1)f'(\eta)=(x_0-1)\int_{x_0}^{\eta}f''(x){\rm d}x.
+\]
+
+两式相乘, 得
+\[
+f^2(x_0)=x_0(1-x_0)\int_{\xi}^{x_0}f''(x){\rm d}x\int_{x_0}^{\eta}f''(x){\rm d}x.
+\]
+
+而
+\[
+\int_{\xi}^{x_0}f''(x){\rm d}x\int_{x_0}^{\eta}f''(x){\rm d}x\leq\frac{1}{4}\left(\int_{\xi}^{x_0}|f''(x)|{\rm d}x+\int_{x_0}^{\eta}|f''(x)|{\rm d}x\right)^2=\frac{1}{4}\left(\int_{\xi}^{\eta}|f''(x)|{\rm d}x\right)^2\leq\frac{1}{4}\left(\int_{0}^{1}|f''(x)|{\rm d}x\right)^2.
+\]
+
+结合 $x_0(1-x_0)\leq\displaystyle\frac{1}{4}$, 得 $f^2(x_0)\leq\displaystyle\frac{1}{16}\left(\int_{0}^{1}|f''(x)|{\rm d}x\right)^2$,
+
+于是 $f(x_0)\leq\displaystyle\frac{1}{4}\int_{0}^{1}|f''(x)|{\rm d}x$, 得证.
+~\\
+~\\
+
+\textbf{P293, T24}. (付汝兰尼积分公式)设 $f(x)$ 于 $[0,+\infty)$ 上连续且 $f(\infty)=\displaystyle\lim\limits_{x\rightarrow+\infty}f(x)$ 存在, 则有
+\[
+\int_{0}^{+\infty}\frac{f(ax)-f(bx)}{x}{\rm d}x=[f(0)-f(\infty)]\ln\frac{b}{a};
+\]
+若将 $f(\infty)$ 存在改为 $\displaystyle\int_{A}^{+\infty}\frac{f(x)}{x}{\rm d}x$ 收敛, 则又有
+\[
+\int_{0}^{+\infty}\frac{f(ax)-f(bx)}{x}{\rm d}x=f(0)\ln\frac{b}{a};
+\]
+若 $f(x)$ 于 $x=0$ 不连续, 但积分 $\displaystyle\int_{0}^{A}\frac{f(x)}{x}{\rm d}x$ 收敛, 则有
+\[
+\int_{0}^{+\infty}\frac{f(ax)-f(bx)}{x}{\rm d}x=f(\infty)\ln\frac{a}{b}.
+\]
+~\\
+
+\textbf{证}: 首先考虑有限区间上的积分, 对任意的 $B>A>0$, 有
+\[
+\begin{aligned}
+    \int_{A}^{B}\frac{f(ax)-f(bx)}{x}{\rm d}x&=\int_{A}^{B}\frac{f(ax)}{x}{\rm d}x-\int_{A}^{B}\frac{f(bx)}{x}{\rm d}x \\
+                                             &=\int_{aA}^{aB}\frac{f(x)}{x}{\rm d}x-\int_{bA}^{bB}\frac{f(x)}{x}{\rm d}x \\
+                                             &=\int_{aA}^{bA}\frac{f(x)}{x}{\rm d}x-\int_{aB}^{bB}\frac{f(x)}{x}{\rm d}x.
+\end{aligned}
+\]
+由积分第一中值定理, 存在 $aA<\xi<bA,aB<\eta<bB$, 使得
+\[
+\int_{aA}^{bA}\frac{f(x)}{x}{\rm d}x=f(\xi)\int_{aA}^{bA}\frac{{\rm d}x}{x}=f(\xi)\ln\frac{b}{a},
+\]
+\[
+\int_{aB}^{bB}\frac{f(x)}{x}{\rm d}x=f(\eta)\int_{aB}^{bB}\frac{{\rm d}x}{x}=f(\eta)\ln\frac{b}{a}.
+\]
+分别令 $A\rightarrow0^+,B\rightarrow+\infty$, 即得要证的结论, 后两个公式同理可得.
+\end{document}
+

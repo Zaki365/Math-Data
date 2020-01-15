@@ -1,0 +1,79 @@
+\documentclass[UTF8]{ctexart}
+\title{数分课本习题整理 —— 函数项级数}
+\author{Yuanzhi Zhang}
+\date{2019.05.09}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{enumerate}
+
+\linespread{1.75}
+\pagestyle{plain}
+\geometry{left=2.0cm,top=2.5cm,bottom=2.5cm,right=2.0cm}
+\allowdisplaybreaks[4]
+
+\begin{document}
+\maketitle
+\textbf{P314,T13}. 设函数序列 $\{f_n(x)\}$ 在 $[a,b]$ 上逐点收敛于连续函数 $f(x)$, 且对每个 $n$, $f_n(x)$ 都是 $[a,b]$ 上的单调函数, 求证: $\{f_n(x)\}$ 在 $[a,b]$ 上一致收敛于 $f(x)$.
+~\\
+
+\textbf{证}: (法一) 在闭区间 $[a,b]$ 上, 连续函数 $f(x)$ 一致连续, 故 $\forall \varepsilon>0,\exists \delta>0$, 使得当 $|x'-x''|<\delta$ 时, $|f(x')-f(x'')|<\varepsilon$.
+
+取正整数 $K$, 使得 $\displaystyle\frac{b-a}{K}<\delta$, 并记 $a_j=a+\displaystyle\frac{b-a}{K}j,(0\leq j\leq K)$, 则
+\[
+\lim\limits_{n\rightarrow\infty}f_n(a_j)=f(a_j).
+\]
+于是 $\exists N>0$, 使得当 $n>N$ 时,
+\[
+|f_n(a_j)-f(a_j)|<\varepsilon.
+\]
+$\forall x\in[a,b], \exists j$, 使得 $x\in[a_j,a_{j+1}](0\leq j \leq K-1)$. 因为 $f_n(x)$ 单调, 所以
+\[
+|f_n(x)-f(x)|\leq \max\{|f_n(a_j)-f(x)|,|f_n(a_{j+1})-f(x)|\}.
+\]
+当 $n>N$ 时,
+\[
+|f_n(a_j)-f(x)|\leq|f_n(a_j)-f(a_j)|+|f(a_j)-f(x)|<2\varepsilon,
+\]
+同理 $|f_n(a_{j+1})-f(x)|<2\varepsilon$, 所以 $|f_n(x)-f(x)|<2\varepsilon$, 证毕.
+~\\
+
+(法二) 采用反证法, 假设 $\{f_n(x)\}$ 在 $[a,b]$ 上不一致收敛于 $f(x)$, 即存在 $\varepsilon_0>0$, $\{n_k\}$ 和收敛的序列 $\{x_k\}\subset[a,b]$, 使得 $|f_{n_k}(x_k)-f(x_k)|\geq\varepsilon_0$, 记  $\lim\limits_{n\rightarrow\infty}x_n=x_0$.
+
+若 $\{x_n\}$ 中有无限多项等于 $x_0$, 则取该子列, 上述不等式不成立, 故不可能.
+
+所以在 $x_0$ 的左侧或右侧中, 必然至少存在一侧, 在该侧有 $\{x_n\}$ 的无限多项, 于是不妨 $\{x_n\}$ 单调递增趋向于 $x_0$.
+
+因为 $f(x)$ 在 $x_0$ 处连续, 所以
+\[
+\lim\limits_{k\rightarrow\infty}f(x_k)=f(x_0),
+\]
+又因为 $f_n(x)$ 逐点收敛于 $f(x)$, 所以
+\[
+\lim\limits_{n\rightarrow\infty}f_n(x_0)=f(x_0).
+\]
+
+那么对于 $\displaystyle\frac{1}{4}\varepsilon_0$, 存在 $K_0>0$, 使得 $\forall k\geq K_0$, 有
+\[
+|f(x_k)-f(x_0)|<\frac{1}{4}\varepsilon_0, |f_{n_k}(x_0)-f(x_0)|<\frac{1}{4}\varepsilon_0.
+\]
+于是当 $k\geq K_0$ 时, 因为 $f_n(x)$ 单调, $\{x_k\}$ 单调递增, 所以
+\[
+|f_{n_k}(x_{K_0})-f_{n_k}(x_0)|\geq |f_{n_k}(x_k)-f_{n_k}(x_0)|.
+\]
+而
+\[
+|f_{n_k}(x_k)-f_{n_k}(x_0)|\geq |f_{n_k}(x_k)-f(x_k)|-|f(x_k)-f(x_0)|-|f(x_0)-f_{n_k}(x_0)|>\varepsilon_0-\frac{1}{4}\varepsilon_0-\frac{1}{4}\varepsilon_0=\frac{1}{2}\varepsilon_0,
+\]
+故有
+\[
+|f_{n_k}(x_{K_0})-f_{n_k}(x_0)|>\displaystyle\frac{1}{2}\varepsilon_0.
+\]
+
+在上式中令 $k\rightarrow\infty$, 得 $|f(x_{K_0})-f(x_0)|\geq\displaystyle\frac{1}{2}\varepsilon_0$, 然而 $|f(x_{K_0})-f(x_0)|\leq\displaystyle\frac{1}{4}\varepsilon_0$, 这样就导出了矛盾, 原结论得证.
+\end{document} 
