@@ -18,19 +18,29 @@
 
 (In no particular order)
 
-2018-2019, Fall & Winter：
+**2018-2019, Fall & Winter：**
 
-Analytic Geometry, Weinmin Sheng.
+* Analytic Geometry, Weinmin Sheng.
 
-Mathematical Analysis I, Yongcheng Yin.
+* Mathematical Analysis I, Yongcheng Yin.
 
-Advanced Algebra I, Diming Lu.
+* Advanced Algebra I, Diming Lu.
 
 
-2018-2019, Spring & Summer:
+**2018-2019, Spring & Summer:**
 
-Point Set Topology, Feng Wang.
+* Point Set Topology, Feng Wang.
 
-Mathematical Analysis II, Yongcheng Yin.
+* Mathematical Analysis II, Yongcheng Yin.
 
-Advanced Algebra II, Diming Lu.
+* Advanced Algebra II, Diming Lu.
+
+**2019-2020， Fall & Winter:**
+
+* Mathematical Analysis III, Yongcheng Yin.
+
+* Abstract Algebra, Fang Li.
+
+* Probability Theory, Lixin Zhang.
+
+* Ordinary Differential Equation, Daoyuan Fang.
