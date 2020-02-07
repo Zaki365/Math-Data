@@ -22,9 +22,9 @@
 
 有些书文件太大了发不上来，我就把百度网盘链接放这里了。
 
-卓里奇数学分析：链接：https://pan.baidu.com/s/1fTgjEQ8QQ1RyHEZowmbBZg 提取码：0xhq 
+卓里奇数学分析中文版：链接：https://pan.baidu.com/s/1fTgjEQ8QQ1RyHEZowmbBZg 提取码：0xhq 
 
-概率论与数理统计（浙大4版）：链接：https://pan.baidu.com/s/1GT_vfZo6JTi2TSJxxFI6qQ 提取码：1moz
+概率论与数理统计浙大四版：链接：https://pan.baidu.com/s/1GT_vfZo6JTi2TSJxxFI6qQ 提取码：1moz
 
 A First Course in Probability(9th Edition)：链接：https://pan.baidu.com/s/1vbfVXyCVSQDkjUlk7fY-hQ 提取码：3ira
 
