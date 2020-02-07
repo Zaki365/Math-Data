@@ -18,6 +18,12 @@
 
 我的Email：3180102113@zju.edu.cn
 
+### BaiduNetdisk Links
+
+有些书文件太大了发不上来，我就把百度网盘链接放这里了。
+
+卓里奇数学分析：链接：https://pan.baidu.com/s/1fTgjEQ8QQ1RyHEZowmbBZg 提取码：0xhq 
+
 ## Course Catalogue
 
 (In no particular order)
