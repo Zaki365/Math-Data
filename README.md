@@ -24,6 +24,10 @@
 
 卓里奇数学分析：链接：https://pan.baidu.com/s/1fTgjEQ8QQ1RyHEZowmbBZg 提取码：0xhq 
 
+概率论与数理统计（浙大4版）：链接：https://pan.baidu.com/s/1GT_vfZo6JTi2TSJxxFI6qQ 提取码：1moz
+
+A First Course in Probability(9th Edition)：链接：https://pan.baidu.com/s/1vbfVXyCVSQDkjUlk7fY-hQ 提取码：3ira
+
 从【学苑君】那里搞到的高数、微积分、线代、概统的视频课资料以及一些很老的试卷：链接：https://pan.baidu.com/s/13DHoTTR68BmR2Hbc2PI4Sg 提取码：un5j
 
 忘了从哪搞到的，2019全国大学生数学竞赛的备考资料：链接：https://pan.baidu.com/s/1wuyL9y_T5TpZIJGPNleuMg 提取码：b1qs
