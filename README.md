@@ -24,6 +24,8 @@
 
 卓里奇数学分析：链接：https://pan.baidu.com/s/1fTgjEQ8QQ1RyHEZowmbBZg 提取码：0xhq 
 
+从【学苑君】那里搞到的高数、微积分、线代、概统的视频课资料以及一些很老的试卷：链接：https://pan.baidu.com/s/13DHoTTR68BmR2Hbc2PI4Sg 提取码：un5j
+
 ## Course Catalogue
 
 (In no particular order)
