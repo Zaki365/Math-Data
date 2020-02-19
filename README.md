@@ -72,6 +72,8 @@
 
 常微分方程 蔡燧林 浙大出版社：链接：https://pan.baidu.com/s/15I13Eayevr5tJBEr-M8usA 提取码：7rns 
 
+数理统计 韦来生 科学出版社：链接：https://pan.baidu.com/s/1HlndcPqBxxQ5LfhtpwHNew 提取码：hale 
+
 Introduction to Linear Algebra(4th Edition) ：链接：https://pan.baidu.com/s/1nZwYxddXZANl8FCo5l4blg 提取码：x6ej 
 
 A First Course in Probability(9th Edition)：链接：https://pan.baidu.com/s/1vbfVXyCVSQDkjUlk7fY-hQ 提取码：3ira
