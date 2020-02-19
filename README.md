@@ -1,4 +1,4 @@
-# Math-Datas From zyz
+# Math-Data From zyz
 
 ## Something To Say
 
@@ -15,25 +15,6 @@
 其中我通过各个渠道搜集到的资料，呈现的形式与我所接触到的一样；而那些我自己整理的题目啊什么的，提供的是 Tex 的版本，更新起来比较方便，各位下载下来之后编译一下就可以了。
 
 如果对某些题目有疑问，我们也可以一起[讨论](mailto:3180102113@zju.edu.cn)一下，我不一定能及时回复你，但是看到之后一定会回复的。
-
-
-### BaiduNetdisk Links
-
-有些书文件太大了发不上来，我就把百度网盘链接放这里了。
-
-卓里奇数学分析中文版：链接：https://pan.baidu.com/s/1fTgjEQ8QQ1RyHEZowmbBZg 提取码：0xhq 
-
-概率论与数理统计浙大四版：链接：https://pan.baidu.com/s/1GT_vfZo6JTi2TSJxxFI6qQ 提取码：1moz （对应的答案见 PDF Books\Probability & Statistics）
-
-A First Course in Probability(9th Edition)：链接：https://pan.baidu.com/s/1vbfVXyCVSQDkjUlk7fY-hQ 提取码：3ira
-
-Statistical Inference(2nd Edition)：链接：https://pan.baidu.com/s/1XqQ50fJpxUPG7mRh1FPw5A 提取码：8dyv 
-
-普林斯顿微积分读本：链接：https://pan.baidu.com/s/1qOKhoswLvRkQdubnVympog 提取码：ajjm 
-
-从【学苑君】那里搞到的高数、微积分、线代、概统的视频课资料以及一些很老的试卷：链接：https://pan.baidu.com/s/13DHoTTR68BmR2Hbc2PI4Sg 提取码：un5j
-
-忘了从哪搞到的，2019全国大学生数学竞赛的备考资料：链接：https://pan.baidu.com/s/1wuyL9y_T5TpZIJGPNleuMg 提取码：b1qs
 
 ## Course Catalogue
 
@@ -65,6 +46,32 @@ Statistical Inference(2nd Edition)：链接：https://pan.baidu.com/s/1XqQ50fJpx
 * Probability Theory, Lixin Zhang.
 
 * Ordinary Differential Equation, Daoyuan Fang.
+
+## BaiduNetdisk Links
+
+有些书文件太大了发不上来，我就把百度网盘链接放这里了。
+
+卓里奇数学分析中文版：链接：https://pan.baidu.com/s/1fTgjEQ8QQ1RyHEZowmbBZg 提取码：0xhq（英文版见 PDF Books/Analysis）
+
+概率论与数理统计浙大四版：链接：https://pan.baidu.com/s/1GT_vfZo6JTi2TSJxxFI6qQ 提取码：1moz （对应的答案见 PDF Books/Probability & Statistics）
+
+概率论（第三版） 林正炎，苏中根，张立新编著 浙大出版社：链接：https://pan.baidu.com/s/1eHzjaO4Uufmcrv8lUFc2iQ 提取码：7hxu 
+
+实变函数 周性伟，孙文昌编著 科学出版社：链接：https://pan.baidu.com/s/1DuovllG6TqAmvu36M7H7lQ 提取码：55w6 
+
+普林斯顿微积分读本：链接：https://pan.baidu.com/s/1qOKhoswLvRkQdubnVympog 提取码：ajjm 
+
+Introduction to Linear Algebra(4th Edition) ：链接：https://pan.baidu.com/s/1nZwYxddXZANl8FCo5l4blg 提取码：x6ej 
+
+A First Course in Probability(9th Edition)：链接：https://pan.baidu.com/s/1vbfVXyCVSQDkjUlk7fY-hQ 提取码：3ira
+
+Statistical Inference(2nd Edition)：链接：https://pan.baidu.com/s/1XqQ50fJpxUPG7mRh1FPw5A 提取码：8dyv 
+
+从【学苑君】那里搞到的高数、微积分、线代、概统的视频课资料以及一些很老的试卷：链接：https://pan.baidu.com/s/13DHoTTR68BmR2Hbc2PI4Sg 提取码：un5j
+
+忘了从哪搞到的，2019全国大学生数学竞赛的备考资料：链接：https://pan.baidu.com/s/1wuyL9y_T5TpZIJGPNleuMg 提取码：b1qs
+
+大物上中下（浙大出版社）+物理实验I（高教社）：链接：https://pan.baidu.com/s/1wLDZRFaZ0mrzR6wvwtcWVw 提取码：5knl 
 
 ## 警告
 
