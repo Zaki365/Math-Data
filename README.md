@@ -28,7 +28,6 @@
 
 * Advanced Algebra I, Diming Lu.
 
-
 **2018-2019, Spring & Summer:**
 
 * Point Set Topology, Feng Wang.
@@ -71,6 +70,8 @@
 
 普林斯顿微积分读本：链接：https://pan.baidu.com/s/1qOKhoswLvRkQdubnVympog 提取码：ajjm 
 
+常微分方程 蔡燧林 浙大出版社：链接：https://pan.baidu.com/s/15I13Eayevr5tJBEr-M8usA 提取码：7rns 
+
 Introduction to Linear Algebra(4th Edition) ：链接：https://pan.baidu.com/s/1nZwYxddXZANl8FCo5l4blg 提取码：x6ej 
 
 A First Course in Probability(9th Edition)：链接：https://pan.baidu.com/s/1vbfVXyCVSQDkjUlk7fY-hQ 提取码：3ira
@@ -81,8 +82,8 @@ Statistical Inference(2nd Edition)：链接：https://pan.baidu.com/s/1XqQ50fJpx
 
 忘了从哪搞到的，2019全国大学生数学竞赛的备考资料：链接：https://pan.baidu.com/s/1wuyL9y_T5TpZIJGPNleuMg 提取码：b1qs
 
-大物上中下（浙大出版社）+物理实验I（高教社）：链接：https://pan.baidu.com/s/1wLDZRFaZ0mrzR6wvwtcWVw 提取码：5knl 
+大物上中下（浙大出版社）+物理实验 I（高教社）：链接：https://pan.baidu.com/s/1wLDZRFaZ0mrzR6wvwtcWVw 提取码：5knl 
 
 ## 警告
 
-仓库中的PDF教材仅供学习交流使用，请勿滥用。如果某些电子书侵犯了您的版权等相关权益，请[联系我](mailto:3180102113@zju.edu.cn)，我会立刻删除相关文件。
+仓库中的 PDF 教材仅供学习交流使用，请勿滥用。如果某些电子书侵犯了您的版权等相关权益，请[联系我](mailto:3180102113@zju.edu.cn)，我会立刻删除相关文件。
