@@ -84,6 +84,6 @@ Statistical Inference(2nd Edition)：链接：https://pan.baidu.com/s/1XqQ50fJpx
 
 大物上中下（浙大出版社）+物理实验 I（高教社）：链接：https://pan.baidu.com/s/1wLDZRFaZ0mrzR6wvwtcWVw 提取码：5knl 
 
-## 警告
+## Warning
 
 仓库中的 PDF 教材仅供学习交流使用，请勿滥用。如果某些电子书侵犯了您的版权等相关权益，请[联系我](mailto:3180102113@zju.edu.cn)，我会立刻删除相关文件。
