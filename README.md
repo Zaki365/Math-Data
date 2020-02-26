@@ -72,7 +72,7 @@
 
 常微分方程 蔡燧林 浙大出版社：链接：https://pan.baidu.com/s/15I13Eayevr5tJBEr-M8usA 提取码：7rns 
 
-数理统计 韦来生 科学出版社：链接：https://pan.baidu.com/s/1HlndcPqBxxQ5LfhtpwHNew 提取码：hale 
+数理统计（第二版） 韦来生 科学出版社：链接：https://pan.baidu.com/s/195uDkEbEWg30G24Dzry7jg 提取码：9lun
 
 Introduction to Linear Algebra(4th Edition) ：链接：https://pan.baidu.com/s/1nZwYxddXZANl8FCo5l4blg 提取码：x6ej 
 
@@ -84,7 +84,7 @@ Statistical Inference(2nd Edition)：链接：https://pan.baidu.com/s/1XqQ50fJpx
 
 忘了从哪搞到的，2019全国大学生数学竞赛的备考资料：链接：https://pan.baidu.com/s/1wuyL9y_T5TpZIJGPNleuMg 提取码：b1qs
 
-大物上中下（浙大出版社）+物理实验 I（高教社）：链接：https://pan.baidu.com/s/1wLDZRFaZ0mrzR6wvwtcWVw 提取码：5knl 
+大物上中下（浙大出版社）+大学物理实验 I（高教社）：链接：https://pan.baidu.com/s/1wLDZRFaZ0mrzR6wvwtcWVw 提取码：5knl 
 
 ## Warning
 
