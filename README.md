@@ -52,9 +52,9 @@
 
 * Mathematical Statistics, Lixin Zhang.
 
-* Complex Variable Function, Xiaoguang Wang.
+* Complex Analysis, Xiaoguang Wang.
 
-* Real Variable Function, Qirui Li.
+* Real Analysis, Qirui Li.
 
 ## BaiduNetdisk Links
 
