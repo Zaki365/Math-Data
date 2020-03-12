@@ -70,7 +70,7 @@
 
 普林斯顿微积分读本：链接：https://pan.baidu.com/s/1qOKhoswLvRkQdubnVympog 提取码：ajjm 
 
-常微分方程 蔡燧林 浙大出版社：链接：https://pan.baidu.com/s/15I13Eayevr5tJBEr-M8usA 提取码：7rns 
+常微分方程 蔡燧林 浙大出版社：链接：https://pan.baidu.com/s/15I13Eayevr5tJBEr-M8usA 提取码：7rns （对应的答案见 PDF Books/Ordinary Differential Equation）
 
 数理统计（第二版） 韦来生 科学出版社：链接：https://pan.baidu.com/s/195uDkEbEWg30G24Dzry7jg 提取码：9lun
 
