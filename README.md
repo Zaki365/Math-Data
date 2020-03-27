@@ -74,6 +74,8 @@
 
 数理统计（第二版） 韦来生 科学出版社：链接：https://pan.baidu.com/s/195uDkEbEWg30G24Dzry7jg 提取码：9lun
 
+线性代数应该这样学（第三版）中文版：链接：https://pan.baidu.com/s/1R77H0S6P0QUKY-04nsOBVw 提取码：cxie 
+
 Introduction to Linear Algebra(4th Edition) ：链接：https://pan.baidu.com/s/1nZwYxddXZANl8FCo5l4blg 提取码：x6ej 
 
 A First Course in Probability(9th Edition)：链接：https://pan.baidu.com/s/1vbfVXyCVSQDkjUlk7fY-hQ 提取码：3ira
