@@ -1,0 +1,65 @@
+\documentclass[UTF8]{ctexart}
+
+\title{\LARGE \textbf{浙江大学 $2019-2020$ 学年春夏学期}}
+\author{求是数学班《微分几何》 测验 I}
+\date{2020.03.13}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{enumerate}
+\usepackage{bm}
+\renewcommand{\d}{\text{d}}
+
+\linespread{1.75}
+\pagestyle{plain}
+%\geometry{left=2.0cm,top=2.5cm,bottom=2.5cm,right=2.0cm}
+\allowdisplaybreaks[4]
+
+\begin{document}
+\maketitle
+
+1. (15分) 设 $\textbf{r}(s)=(x(s),y(s))$ 是平面上的弧长参数曲线, $\left\{\textbf{T}(s),\textbf{N}_r(s)\right\}$ 是它的 Frenet 标架, 证明:
+\begin{enumerate}[(1)]
+    \item $\textbf{N}_r(s)=(-\dot{y}(s),\dot{x}(s)), \ddot{\textbf{r}}(s)=k_r(s)(-\dot{y}(s),\dot{x}(s))$;
+    \item $k_r(s)=\dot{x}(s)\ddot{y}(s)-\ddot{x}(s)\dot{y}(s)$;
+    \item 取一般参数 $t$ 时, 有 $\displaystyle k_r(t)=\frac{x'(t)y''(t)-x''(t)y'(t)}{\left[(x'(t))^2+(y'(t))^2\right]^{\frac{3}{2}}}.\\$
+\end{enumerate}
+
+2. (15分) 设 $P_0$ 为曲线 $C$ 上的一点, $P$ 为曲线上 $P_0$ 的临近点, $l$ 为 $P_0$ 处的切线, $Q$ 为过点 $P$ 向切线 $l$ 所引的垂线足, 记 $d=d(P,P_0),h=d(P,Q),\rho=d(P_0,Q)$, 
+证明: (1) $\displaystyle \lim\limits_{P\to P_0}\frac{h}{d}=0$; \quad (2) $k=\displaystyle \lim\limits_{\rho\to0}\frac{2h}{\rho^2}$.
+\\
+
+3. (15分) 已知 $C: \textbf{x}=\textbf{x}(s)$ 是一条正则参数曲线, $s$ 是它的弧长参数, 其曲率 $k(s)>0$ 和挠率 $\tau(s)>0$, 
+$\left\{\textbf{x}(s);\textbf{T}(s),\textbf{N}(s),\textbf{B}(s)\right\}$ 是沿着曲线 $C$ 的 Frenet 标架场. 作一条新的曲线 $\tilde{C}:$
+\[
+\tilde{\textbf{x}}(s)=\int_{s_0}^{s}\textbf{B}(s)\d x. 
+\]
+\begin{enumerate}[(1)]
+    \item 求曲线 $\tilde{C}$ 的 Frenet 标架场 $\left\{\tilde{\textbf{x}}(s);\tilde{\textbf{T}}(s),\tilde{\textbf{N}}(s),\tilde{\textbf{B}}(s)\right\}$;
+    \item 证明: $\tilde{k}(s)=\tau(s),\tilde{\tau}(s)=k(s)$.\\
+\end{enumerate}
+
+4. (20分) 证明: 将正螺面 $M:\textbf{x}(u,v)=(v\cos u,v\sin u,au),0\le u\le 2\pi,-\infty<v<+\infty$ 上每一点借助于在该点的单位法向映到单位球面 $S^2(1)$ 上
+的映射 $\sigma$ 是共形的.
+\\
+
+5. (15分) 设 $\phi(u^1,u^2)=$ 常数以及 $\psi(u^1,u^2)=$ 常数是曲面上两族正则曲线, 证明: 它们相互正交的充要条件是:
+\[
+g_{11}\phi_2\psi_2-g_{12}(\phi_1\psi_2+\phi_2\psi_1)+g_{22}\phi_1\psi_1=0.    
+\]
+其中 $g_{11},g_{12},g_{22}$ 是给定曲面的第一基本形式的系数.
+\\
+
+6. (20分) 设正则参数曲线 $C:\textbf{x}(s)$ 的曲率 $k(s)$ 和挠率 $\tau(s)$ 都不为零, 它的 Frenet 标架是 
+$\left\{\textbf{x}(s);\textbf{T}(s),\textbf{N}(s),\textbf{B}(s)\right\}$, $s$ 是弧长参数.
+\begin{enumerate}[(1)]
+    \item 求定义在该曲线上的向量场 $\textbf{l}(s)=\textbf{T}(s)+\lambda(s)\textbf{B}(s)$, 使得以 $C$ 为准线, 以 $\textbf{l}(s)$ 为方向向量的直纹面是可展曲面;
+    \item 证明: 该可展曲面是柱面的充分必要条件是 $\displaystyle\frac{k(s)}{\tau(s)}$ 为常数.
+\end{enumerate}
+
+\end{document}
