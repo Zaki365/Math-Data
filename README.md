@@ -72,7 +72,7 @@
 
 常微分方程 蔡燧林 浙大出版社：链接：https://pan.baidu.com/s/15I13Eayevr5tJBEr-M8usA 提取码：7rns （对应的答案见 PDF Books/Ordinary Differential Equation）
 
-常微分方程 方道元，薛儒英 高等教育出版社：链接：https://pan.baidu.com/s/1PH1m1v5NqqPjQvn-lzsoqw 提取码：khta （对应的答案见 PDF Books/Ordinary Differential Equation）
+常微分方程 方道元，薛儒英 高等教育出版社：链接：https://pan.baidu.com/s/1PH1m1v5NqqPjQvn-lzsoqw 提取码：khta （对应的答案见Ordinary Differential Equation 或 PDF Books/Ordinary Differential Equation）
 
 数理统计（第二版） 韦来生 科学出版社：链接：https://pan.baidu.com/s/195uDkEbEWg30G24Dzry7jg 提取码：9lun
 
