@@ -64,13 +64,15 @@
 
 概率论与数理统计浙大四版：链接：https://pan.baidu.com/s/1GT_vfZo6JTi2TSJxxFI6qQ 提取码：1moz （对应的答案见 PDF Books/Probability & Statistics）
 
-概率论（第三版） 林正炎，苏中根，张立新编著 浙大出版社：链接：https://pan.baidu.com/s/1eHzjaO4Uufmcrv8lUFc2iQ 提取码：7hxu 
+概率论（第三版） 林正炎，苏中根，张立新 浙大出版社：链接：https://pan.baidu.com/s/1eHzjaO4Uufmcrv8lUFc2iQ 提取码：7hxu 
 
-实变函数 周性伟，孙文昌编著 科学出版社：链接：https://pan.baidu.com/s/1DuovllG6TqAmvu36M7H7lQ 提取码：55w6 
+实变函数 周性伟，孙文昌 科学出版社：链接：https://pan.baidu.com/s/1DuovllG6TqAmvu36M7H7lQ 提取码：55w6 
 
 普林斯顿微积分读本：链接：https://pan.baidu.com/s/1qOKhoswLvRkQdubnVympog 提取码：ajjm 
 
 常微分方程 蔡燧林 浙大出版社：链接：https://pan.baidu.com/s/15I13Eayevr5tJBEr-M8usA 提取码：7rns （对应的答案见 PDF Books/Ordinary Differential Equation）
+
+常微分方程 方道元，薛儒英 高等教育出版社：链接：https://pan.baidu.com/s/1PH1m1v5NqqPjQvn-lzsoqw 提取码：khta （对应的答案见 PDF Books/Ordinary Differential Equation）
 
 数理统计（第二版） 韦来生 科学出版社：链接：https://pan.baidu.com/s/195uDkEbEWg30G24Dzry7jg 提取码：9lun
 
