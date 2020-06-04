@@ -1,0 +1,59 @@
+\documentclass[UTF8]{ctexart}
+
+\title{\LARGE \textbf{浙江大学 $2019-2020$ 学年春夏学期}}
+\author{求是数学班《微分几何》 测验 III}
+\date{2020.05.29}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{enumerate}
+\usepackage{bm}
+\renewcommand{\d}{\text{d}}
+
+\linespread{1.5}
+\pagestyle{plain}
+%\geometry{left=2.0cm,top=2.5cm,bottom=2.5cm,right=2.0cm}
+\allowdisplaybreaks[4]
+
+\begin{document}
+\maketitle
+1. (20分) 利用曲面论基本定理证明: 不存在曲面使得
+\[
+g_{11}=g_{22}=1,  g_{12}=0;   h_{11}=1,  h_{12}=0,  h_{22}=-1.
+\]
+又是否存在曲面使得
+\[
+g_{11}=1, g_{12}=0, g_{22}=\cos^2u; h_{11}=\cos^2u, h_{12}=0, h_{22}=1 ?
+\]
+
+
+2. (20分) 设曲面的第一基本形式为 $\d s^2=\d u^2+G(u,v)\d v^2$.
+\begin{enumerate}[(1)]
+    \item 求 $\Gamma_{ij}^{k}$;
+    \item 证明: $u$ 线为测地线;
+    \item 证明: $\displaystyle K=-\frac{1}{\sqrt{G}}\cdot\frac{\partial^2\sqrt{G}}{\partial u^2}$;
+    \item 若一测地线与 $u$ 线的交角为 $\theta$, 证明: $\displaystyle \frac{\d \theta}{\d v}=-\frac{\partial\sqrt{G}}{\partial u}$.\\
+\end{enumerate} 
+
+3. (20分) 证明: Gauss 曲率为正常数 $K$ 的曲面的第一基本形式可以写成 
+\[ 
+I=(\d u)^2+\frac{1}{K}\sin^2(\sqrt{K}u)(\d v)^2.
+\]
+如果 $(u(s),v(s))$ 是该曲面上的一条测地线的参数方程, 则存在不全为零的常数 $A,B,C$ 满足下面的关系式:
+\[
+A\sin\left(\sqrt{K}u(s)\right)\cos v(s)+B\sin\left(\sqrt{K}u(s)\right)\sin v(s)+C\cos\left(\sqrt{K}u(s)\right)=0.    
+\]
+
+
+4. (20分) 在旋转曲面 $M:x(u,v)=(u\cos v,u\sin v,g(u))$ 上建立幺正标架, 并计算它的无穷小运动分量 $\omega^i,\omega_j^i$.
+\\
+
+5. (20分) 设曲面 $M$ 的第一基本形式为 $I=\left(F(u)+G(v)\right)\left((\d u)^2+(\d v)^2\right)$, 
+求曲面上幺正活动标架的无穷小运动分量 $\omega^i,\omega_1^2$ 和 Gauss 曲率 $K$.
+
+\end{document}
