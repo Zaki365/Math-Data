@@ -56,6 +56,16 @@
 
 * Real Analysis, Qirui Li.
 
+**2020-2021, Fall & Winter:**
+
+* Functional Analysis, Huojun Ruan.
+
+* Scientific Computing, Xiaoliang Cheng.
+
+* Partial Differential Equation, Dexing Kong.
+
+* Differential Manifold, Feng Wang.
+
 ## BaiduNetdisk Links
 
 有些书文件太大了发不上来，我就把百度网盘链接放这里了。
