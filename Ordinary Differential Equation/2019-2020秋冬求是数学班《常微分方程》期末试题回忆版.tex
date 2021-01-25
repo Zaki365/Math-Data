@@ -21,9 +21,16 @@
 \usepackage{graphicx}
 \usepackage{subfigure}
 \usepackage{enumerate}
+\usepackage{draftwatermark}
+%\usepackage{everypage}
+\usepackage{bm}
+\SetWatermarkText{请勿用于商业用途}
+\SetWatermarkLightness{0.92}
+\SetWatermarkScale{0.4}
 \pagestyle{plain}
 \geometry{top=2.5cm}
 \linespread{1.75}
+\renewcommand{\d}{\text{d}}
 
 \begin{document}
 
@@ -32,8 +39,9 @@
 考生姓名: \underline{\quad\quad\quad\quad\quad\quad\quad\quad\quad} 学号: \underline{\quad\quad\quad\quad\quad\quad\quad\quad\quad} 所属院系: \underline{\quad\quad\quad\quad\quad\quad\quad\quad\quad}
 \end{center}
 
-\textbf{注: 该试卷为考生回忆版, 部分试题可能会有错误, 请多多谅解! \textit{@YZ Zhang}}
-\\
+\begin{center}
+    \Large{\textbf{由 CC98 @\textit{Serapay} 回忆整理, 请勿用于商业用途}}
+\end{center}
 
 一、 (32分) 求下列方程 (组) 的特解或通解
 
@@ -76,5 +84,5 @@
 六、 (15分) 直接证明初值问题 $\displaystyle\frac{\text{d}y}{\text{d}x}=\sin(xy), x(0)=0$ 解的连续依赖性.
 \\
 
-附加题 (10分): 给定线性非齐次方程组 $\displaystyle\frac{\text{d}\boldsymbol{X}}{\text{d}t}=\boldsymbol{AX}+\boldsymbol{R}\left( \boldsymbol{X} \right)$, 其中 $\boldsymbol{R}\left( \boldsymbol{X} \right)$ 是 $\boldsymbol{X}$ 的高阶无穷小, 若已知其线性系统 $\displaystyle\frac{\text{d}\boldsymbol{X}} {\text{d}t}=\boldsymbol{AX}$ 的零解是渐进稳定的, 求证非齐次方程的零解是稳定的.
+附加题 (10分): 给定线性非齐次方程组 $\displaystyle\frac{\text{d}\boldsymbol{X}}{\text{d}t}=\boldsymbol{AX}+\boldsymbol{R}\left( \boldsymbol{X} \right)$, 其中 $\boldsymbol{R}\left( \boldsymbol{X} \right)$ 是 $\boldsymbol{X}$ 的高阶无穷小, 若已知其线性系统 $\displaystyle\frac{\text{d}\boldsymbol{X}} {\text{d}t}=\boldsymbol{AX}$ 的零解是渐近稳定的, 求证非齐次方程的零解是稳定的.
 \end{document} 
