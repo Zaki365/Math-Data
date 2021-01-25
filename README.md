@@ -64,8 +64,6 @@
 
 * Partial Differential Equation, Dexing Kong.
 
-* Differential Manifold, Feng Wang.
-
 ## BaiduNetdisk Links
 
 有些书文件太大了发不上来，我就把百度网盘链接放这里了。
